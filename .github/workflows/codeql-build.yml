@@ -8,6 +8,8 @@ on:
     # 11:15 PM UTC every Sunday
     - cron:  '15 23 * * 0'
 
+permissions: read-all|write-all
+
 jobs:
   codeql:
     uses: nasa/cFS/.github/workflows/codeql-reusable.yml@main
